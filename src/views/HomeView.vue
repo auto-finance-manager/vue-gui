@@ -1,9 +1,10 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import HeaderComponent from "@/components/headers/HeaderComponent.vue";
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
+  <header-component />
+  <hr class="py-0 my-0">
+  <main class="bg-danger h-100">
   </main>
 </template>
