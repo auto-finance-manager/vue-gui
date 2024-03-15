@@ -13,5 +13,4 @@ import { RouterView } from 'vue-router'
   font-weight: 300;
   font-style: normal;
 }
-
 </style>

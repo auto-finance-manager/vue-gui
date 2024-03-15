@@ -24,7 +24,24 @@ const router = createRouter({
           component: () => import('../views/auth_view/LoginView.vue')
         }
       ]
-    }
+    },
+    {
+      path: '',
+      name: '',
+      component: () => import('../views/app_views/AppView.vue'),
+      children: [
+        {
+          path: '/my-stocks',
+          name: 'my-stocks',
+          component: () => import('../views/MyStocksView.vue')
+        },
+        {
+          path: '/add',
+          name: 'add-my-stocks',
+          component: () => import('../views/AddStockView.vue')
+        }
+      ]
+    },
   ]
 })
 

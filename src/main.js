@@ -5,6 +5,13 @@ import { createPinia } from 'pinia'
 
 import App from './App.vue'
 import router from './router'
+import axios from "axios";
+
+
+// eslint-disable-next-line no-undef
+axios.defaults.baseURL = import.meta.env.VUE_APP_API_PATH
+
+console.log(import.meta.env)
 
 const app = createApp(App)
 
@@ -15,3 +22,4 @@ app.mount('#app')
 
 import 'bootstrap/dist/js/bootstrap.js'
 import 'bootstrap/dist/js/bootstrap.bundle.js'
+
